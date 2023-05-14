@@ -1,15 +1,13 @@
-#include <stdio.h>
-int main()
-{
-    int base, power;
-    printf("Enter the Base ans Power:");
-    scanf("%d %d", &base, &power);
-    int temp = 1;
-    while (power > 0)
-    {
-        /* code */
-        temp = temp * base;
+#include<stdio.h>
+int main(){
+    int base,power;
+    int temp=1;
+    printf("Enter the value:");
+    scanf("%d %d",&base,&power);
+    while (power>0){
+        temp=temp*base;
         power--;
     }
-    printf("\n%d", temp);
+
+    printf("\n%d",temp);
 }
